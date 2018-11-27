@@ -3,7 +3,7 @@ def badge_maker(name)
 end
 
 def batch_badge_creator(attendees)
-  attendees.map! {|x| "Hello, my name is #{x}."} 
+  attendees.map! {|x| badge_maker(attendees)} 
 end 
 
 def assign_rooms(attendees)
